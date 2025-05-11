@@ -74,9 +74,9 @@ await startSwarm(
 );
 ```
 
-## State Machine Verification
+## Data Scraping
 
-The system uses cryptographic proofs for all state transitions:
+The system uses Data Scraping - with proof of state & parsing:
 
 ```typescript
 interface Proof {
@@ -89,9 +89,9 @@ interface Proof {
 }
 ```
 
-## Persona Evolution
+## Agent Evolution
 
-Personas evolve through a tree-based structure:
+Agents evolve based on a tree-based structure:
 
 ```typescript
 interface PersonaStateData {
@@ -129,8 +129,8 @@ POST /end
 
 The system requires PostgreSQL with the following tables:
 
-- `agent_personas`: Stores persona states and evolution history
-- `execution_logs`: Stores state transition logs and proofs
+- `agent_personas`: Stores agent data & evolutions.
+- `execution_logs`: Stores state transition logs and proofs.
 
 ## Contributing
 
